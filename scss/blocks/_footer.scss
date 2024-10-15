@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 40px;
+  min-height: 100px;
+  background-color: $footerBackground;
+
+  display: flex; /* Додаємо flexbox */
+  align-items: center; /* Вирівнювання по вертикалі */
+  justify-content: center; /* Вирівнювання по горизонталі */
+  text-align: center;
+
+  .footer__group {
+    color: $footerText;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
