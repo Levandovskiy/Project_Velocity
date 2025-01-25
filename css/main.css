@@ -506,13 +506,19 @@ body {
   padding: 5px;
   background-color: transparent;
   margin-bottom: 80px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 550px) {
   .services .services__batton_item1 {
     margin-bottom: 30px;
   }
 }
+.services .services__batton_item1:hover {
+  transform: scale(1.1); /* збільшуємо картинку на 10% */
+}
 .services .services__batton_item2 {
+  width: 100%;
   height: auto;
   margin: 0;
   display: block;
@@ -534,11 +540,16 @@ body {
   padding: 5px;
   background-color: transparent;
   margin-bottom: 80px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 550px) {
   .services .services__batton_item2 {
     margin-bottom: 30px;
   }
+}
+.services .services__batton_item2:hover {
+  transform: scale(1.1); /* збільшуємо картинку на 10% */
 }
 
 .tabSection__text {
@@ -596,7 +607,7 @@ body {
 }
 .tabSection__button--left {
   color: #ffffff;
-  background-color: #2e80b6;
+  background-color: #92a0ad;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -605,11 +616,16 @@ body {
   width: 100%;
   max-width: 196px;
   border-radius: 4px 4px 4px 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   .tabSection__button--left {
     margin-bottom: 20px;
   }
+}
+.tabSection__button--left:hover {
+  transform: scale(1.1); /* збільшуємо картинку на 10% */
 }
 .tabSection__button--center {
   color: #ffffff;
@@ -622,11 +638,16 @@ body {
   width: 100%;
   max-width: 196px;
   border-radius: 4px 4px 4px 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   .tabSection__button--center {
     margin-bottom: 20px;
   }
+}
+.tabSection__button--center:hover {
+  transform: scale(1.1); /* збільшуємо картинку на 10% */
 }
 .tabSection__button--right {
   color: #ffffff;
@@ -639,9 +660,42 @@ body {
   width: 100%;
   max-width: 196px;
   border-radius: 4px 4px 4px 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   .tabSection__button--right {
+    margin-bottom: 20px;
+  }
+}
+.tabSection__button--right:hover {
+  transform: scale(1.1); /* збільшуємо картинку на 10% */
+}
+.tabSection__button--active {
+  color: #ffffff;
+  background-color: #2e80b6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 196px;
+  border-radius: 4px 4px 4px 4px;
+  transform: scale(1.1);
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.tabSection__button--active:active {
+  transform: scale(1.05);
+}
+.tabSection__button--active--active {
+  transform: scale(5.1);
+  background-color: #0056b3;
+}
+@media (max-width: 700px) {
+  .tabSection__button--active {
     margin-bottom: 20px;
   }
 }

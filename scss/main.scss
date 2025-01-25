@@ -385,9 +385,17 @@ body {
     @media (max-width: 550px) {
       margin-bottom: 30px;
     }
+    // ховер
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .services__batton_item1:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 
   .services__batton_item2 {
+    width: 100%;
     height: auto;
     margin: 0;
     display: block;
@@ -413,9 +421,16 @@ body {
     background-color: transparent;
     margin-bottom: 80px;
 
+    // ховер
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
     @media (max-width: 550px) {
       margin-bottom: 30px;
     }
+  }
+  .services__batton_item2:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 }
 
@@ -479,7 +494,7 @@ body {
 
   &__button--left {
     color: $colorTextBatton;
-    background-color: $backgroundColorText;
+    background-color: $backgroundColorTextNoActive;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -493,6 +508,12 @@ body {
     @media (max-width: 700px) {
       margin-bottom: 20px;
     }
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  &__button--left:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 
   &__button--center {
@@ -511,6 +532,11 @@ body {
     @media (max-width: 700px) {
       margin-bottom: 20px;
     }
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  &__button--center:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 
   &__button--right {
@@ -525,6 +551,43 @@ body {
     width: 100%;
     max-width: 196px;
     border-radius: 4px 4px 4px 4px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 20px;
+    }
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  &__button--right:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
+  }
+  &__button--active {
+    color: $colorTextBatton;
+    background-color: $backgroundColorText;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    width: 100%;
+    max-width: 196px;
+    border-radius: 4px 4px 4px 4px;
+
+    transform: scale(1.1);
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+
+    &:active {
+      transform: scale(1.05); // Зменшення під час натискання
+    }
+
+    &--active {
+      transform: scale(5.1); // Постійне збільшення для активної кнопки
+      background-color: #0056b3; // Опціонально: змінюємо колір для візуалізації активного стану
+    }
 
     @media (max-width: 700px) {
       margin-bottom: 20px;
