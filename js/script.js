@@ -1,6 +1,4 @@
-// tabSection  активація секції
-
-// отримання всіх кнопок через клас
+// Отримання всіх кнопок через клас
 const buttons = document.querySelectorAll(".tabSection__button");
 const titleElement = document.querySelector(".tabSection__title");
 const textElement = document.querySelector(".tabSection__description");

@@ -289,6 +289,18 @@ body {
     font-size: 7px;
   }
 }
+.main__block_batton .batton_item2 a {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px;
+  background-color: transparent;
+}
 @media (max-width: 600px) {
   .main__block_batton {
     top: 60%;
