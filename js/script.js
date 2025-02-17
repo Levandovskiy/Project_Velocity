@@ -3,6 +3,14 @@ const buttons = document.querySelectorAll(".tabSection__button");
 const titleElement = document.querySelector(".tabSection__title");
 const textElement = document.querySelector(".tabSection__description");
 const imageElement = document.querySelector(".tabSection__imgItem");
+const buttonSignUp = document.querySelector("batton_item");
+
+let registerActive = (document.querySelector(
+  ".registration-form"
+).style.display = "none"); // Добавляємо стиль None
+let registerNoActive = document
+  .querySelector(".registration-form")
+  .style.removeProperty("display"); // Прибираємо стиль None
 
 const newElement = [
   {
