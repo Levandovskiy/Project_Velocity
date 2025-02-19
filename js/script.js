@@ -3,14 +3,8 @@ const buttons = document.querySelectorAll(".tabSection__button");
 const titleElement = document.querySelector(".tabSection__title");
 const textElement = document.querySelector(".tabSection__description");
 const imageElement = document.querySelector(".tabSection__imgItem");
-const buttonSignUp = document.querySelector("batton_item");
-
-let registerActive = (document.querySelector(
-  ".registration-form"
-).style.display = "none"); // Добавляємо стиль None
-let registerNoActive = document
-  .querySelector(".registration-form")
-  .style.removeProperty("display"); // Прибираємо стиль None
+const buttonSignUp = document.querySelector(".batton_item");
+const registerForm = document.querySelector(".registration-form");
 
 const newElement = [
   {
@@ -30,7 +24,7 @@ const newElement = [
   },
 ];
 
-// Додаємо обробники кліків
+//TODO Додаємо обробники кліків
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
     // Знімаємо активний клас з усіх кнопок
@@ -47,4 +41,24 @@ buttons.forEach((button, index) => {
     imageElement.src = newElement[index].img;
     imageElement.alt = newElement[index].title;
   });
+});
+
+//TODO Працюємо з формою
+
+function hideRegisterForm() {
+  registerForm.style.display = "none";
+}
+
+function showRegisterForm() {
+  registerForm.style.display = "block"; //TODO Змінюємо  значення з CSS
+}
+
+buttonSignUp.addEventListener("click", () => {
+  showRegisterForm();
+});
+
+window.addEventListener("click", function (event) {
+  if (!registerForm.contains(event.target) && event.target !== buttonSignUp) {
+    hideRegisterForm();
+  }
 });
