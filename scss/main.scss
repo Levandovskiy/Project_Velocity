@@ -171,6 +171,14 @@ body {
     @media (max-width: 400px) {
       font-size: 7px;
     }
+
+    // ховер
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .batton_item:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 
   .batton_item2 {
@@ -221,6 +229,14 @@ body {
 
       background-color: transparent;
     }
+
+    // ховер
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .batton_item2:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 
   @media (max-width: 600px) {

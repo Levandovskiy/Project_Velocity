@@ -12,6 +12,11 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// Ініціалізуємо Twilio клієнт
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = twilio(accountSid, authToken);
+
 app.post("/register", (req, res) => {
   const { name, phone, password } = req.body;
   console.log("Отримані дані:", req.body);

@@ -24,6 +24,14 @@
     @media (max-width: 600px) {
       font-size: 17px;
     }
+
+    // ховер
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .header_frame-text:hover {
+    transform: scale(1.1); /* збільшуємо картинку на 10% */
   }
 
   .header_frame-frame1 {
@@ -42,6 +50,14 @@
       font-weight: 400;
       line-height: 20px;
       color: $contact;
+
+      // ховер
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .header_frame-text2:hover {
+      transform: scale(1.1); /* збільшуємо картинку на 10% */
     }
     .header_frame-text4 {
       color: $home;
@@ -51,6 +67,14 @@
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
       line-height: 20px;
+
+      // ховер
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .header_frame-text4:hover {
+      transform: scale(1.1); /* збільшуємо картинку на 10% */
     }
   }
 }
